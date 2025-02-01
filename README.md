@@ -27,3 +27,7 @@ Works on MacOS that has M1/M2/M3/m4 chips().
 2. Move app to `~/Applications`
 3. Run the Doom. (Note: First time it may take a while to open as it will install the dependencies and its possible that you might need to install ollama separately.)
 4. If privacy is enabled you might need to allow the app in `System Preferences` -> `Security & Privacy`
+
+## screenshots
+
+![Chat interface](assets/Doom.png)
