@@ -1,7 +1,7 @@
 import streamlit as st
 import ollama
 
-
+st.set_page_config(page_title="Doom Chat", page_icon="🤖")
 st.markdown("""
 <style>
     div[data-baseweb="select"] {
@@ -13,6 +13,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown('<h4 style="text-align: center;">🤖 Chat with Local LLM Models</h4>', unsafe_allow_html=True)
 st.markdown('<h4 style="text-align: center;"></h4>', unsafe_allow_html=True)
 
 # Initialize session state for chat history if it doesn't exist
@@ -35,7 +36,7 @@ col1, col2, col3 = st.columns([1, 1, 1])
 # Column 1: Clear button (left aligned)
 if col1.button("Clear Chat", use_container_width=False):
     st.session_state.chat_history = []
-    st.experimental_rerun()
+    # st.experimental_rerun()
 
 # Column 2: Model selection (right aligned)
 selected_model = col2.selectbox(
@@ -64,7 +65,7 @@ if col3.button("Submit", use_container_width=True):
             for chunk in stream:
                 if 'response' in chunk:
                     response_text = chunk['response']
-                    response_text = response_text.replace('<think>', '**`').replace('</think>', '`**')
+                    response_text = response_text.replace('<think>', '**').replace('</think>', '**')
                     full_response += response_text
                     response_placeholder.markdown(full_response)
             
