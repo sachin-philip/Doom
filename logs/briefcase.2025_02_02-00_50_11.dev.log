@@ -1,0 +1,249 @@
+Date/Time:       2025-02-02 00:50:11 
+Command line:    /Users/labtocat/miniconda3/envs/venv-311/bin/briefcase dev
+
+OS Release:      Darwin 24.3.0
+OS Version:      Darwin Kernel Version 24.3.0: Thu Jan  2 20:24:06 PST 2025; root:xnu-11215.81.4~3/RELEASE_ARM64_T8103
+Architecture:    arm64
+Platform:        macOS-15.3-arm64-arm-64bit
+
+Python exe:      /Users/labtocat/miniconda3/envs/venv-311/bin/python
+Python version:  3.11.11 (main, Dec 11 2024, 10:25:04) [Clang 14.0.6 ]
+Virtual env:     False
+Conda env:       True
+
+Briefcase:       0.3.21
+Target platform: macOS
+Target format:   None
+
+Environment Variables:
+	BUN_INSTALL=/Users/labtocat/.bun
+	COLORTERM=truecolor
+	COMMAND_MODE=unix2003
+	CONDA_DEFAULT_ENV=venv-311
+	CONDA_EXE=/Users/labtocat/miniconda3/bin/conda
+	CONDA_PREFIX=/Users/labtocat/miniconda3/envs/venv-311
+	CONDA_PREFIX_1=/Users/labtocat/miniconda3
+	CONDA_PROMPT_MODIFIER=(venv-311) 
+	CONDA_PYTHON_EXE=/Users/labtocat/miniconda3/bin/python
+	CONDA_SHLVL=2
+	CURSOR_TRACE_ID=d30dc3a2097d412298d53d8c37acf0bd
+	FIG_NEW_SESSION=1
+	GIT_ASKPASS=********************
+	HOME=/Users/labtocat
+	HOMEBREW_CELLAR=/opt/homebrew/Cellar
+	HOMEBREW_PREFIX=/opt/homebrew
+	HOMEBREW_REPOSITORY=/opt/homebrew
+	INFOPATH=/opt/homebrew/share/info:
+	LANG=en_US.UTF-8
+	LESS=-R
+	LOGNAME=labtocat
+	LSCOLORS=Gxfxcxdxbxegedabagacad
+	LaunchInstanceID=3FDB0903-028E-4F66-948B-A8EF12961502
+	MAVEN_HOME=/Applications/apache-maven-3.9.6
+	MallocNanoZone=0
+	NVM_BIN=/Users/labtocat/.nvm/versions/node/v18.16.0/bin
+	NVM_CD_FLAGS=-q
+	NVM_DIR=/Users/labtocat/.nvm
+	NVM_INC=/Users/labtocat/.nvm/versions/node/v18.16.0/include/node
+	OLDPWD=/Users/labtocat/Code/stream-lit
+	ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+	PAGER=less
+	PATH=/Users/labtocat/miniconda3/envs/venv-311/bin:/Users/labtocat/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh:/Users/labtocat/Code/stream-lit/venv/bin:/Applications/apache-maven-3.9.6/bin:/Users/labtocat/Code/feeon/google-cloud-sdk/bin:/Users/labtocat/miniconda3/bin:/Users/labtocat/miniconda3/condabin:/Users/labtocat/.bun/bin:/Users/labtocat/.nvm/versions/node/v18.16.0/bin:/Users/labtocat/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh:/Users/labtocat/Code/stream-lit/venv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/usr/local/go/bin:/Users/labtocat/.cargo/bin:/Users/labtocat/.local/bin:/Users/labtocat/.cursor/extensions/ms-python.python-2024.12.3-darwin-arm64/python_files/deactivate/zsh:/Users/labtocat/Code/stream-lit/venv/bin
+	PS1=(venv-311) venv$(/opt/homebrew/bin/starship prompt --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")
+	PWD=/Users/labtocat/Code/stream-lit
+	SECURITYSESSIONID=186ac
+	SHELL=/bin/zsh
+	SHLVL=1
+	SSH_AUTH_SOCK=/private/tmp/com.apple.launchd.jcyYybdrFK/Listeners
+	STARSHIP_SESSION_KEY=********************
+	STARSHIP_SHELL=zsh
+	TERM=xterm-256color
+	TERM_PROGRAM=vscode
+	TERM_PROGRAM_VERSION=0.45.7
+	TMPDIR=/var/folders/3w/xp395f7s65z7r4mk2l897nbh0000gn/T/
+	USER=labtocat
+	USER_ZDOTDIR=/Users/labtocat
+	VSCODE_GIT_ASKPASS_EXTRA_ARGS=********************
+	VSCODE_GIT_ASKPASS_MAIN=********************
+	VSCODE_GIT_ASKPASS_NODE=********************
+	VSCODE_GIT_IPC_HANDLE=/var/folders/3w/xp395f7s65z7r4mk2l897nbh0000gn/T/vscode-git-ef09cfbb32.sock
+	VSCODE_INJECTION=1
+	XPC_FLAGS=0x0
+	XPC_SERVICE_NAME=0
+	ZDOTDIR=/Users/labtocat
+	ZSH=/Users/labtocat/.oh-my-zsh
+	_=/Users/labtocat/miniconda3/envs/venv-311/bin/briefcase
+	_CE_CONDA=
+	_CE_M=
+	__CFBundleIdentifier=com.todesktop.230313mzl4w4u92
+	__CF_USER_TEXT_ENCODING=0x1F5:0x0:0x0
+
+pyproject.toml:
+[tool.briefcase]
+project_name = "Doom Chat"
+bundle = "com.labtocat.doomchat"
+version = "0.1.0"
+url = "https://labtocat.com/doomchat"
+license = "MIT license"
+author = "Labtocat"
+author_email = "hello@labtocat.com"
+
+[tool.briefcase.app.doomchat]
+formal_name = "Doom Chat"
+description = "Doom Chat"
+sources = ['src/doomchat']
+requires = [
+    'streamlit>=1.20.0',
+    'ollama',
+    'std-nslog'
+]
+entry_point = "doomchat.__main__:main"
+
+Briefcase Log:
+[00:50:10]                                                                                                                                                             config.py:563
+           *************************************************************************                                                                                   config.py:563
+           ** WARNING: License Definition for the Project is Deprecated           **                                                                                   config.py:563
+           *************************************************************************                                                                                   config.py:563
+                                                                                                                                                                       config.py:563
+               Briefcase now uses PEP 621 format for license definitions.                                                                                              config.py:563
+                                                                                                                                                                       config.py:563
+               Previously, the name of the license was assigned to the 'license'                                                                                       config.py:563
+               field in pyproject.toml. For PEP 621, the name of the license is                                                                                        config.py:563
+               assigned to 'license.text' or the name of the file containing the                                                                                       config.py:563
+               license is assigned to 'license.file'.                                                                                                                  config.py:563
+                                                                                                                                                                       config.py:563
+               The current configuration for the Project has a 'license' field                                                                                         config.py:563
+               that is specified as a string:                                                                                                                          config.py:563
+                                                                                                                                                                       config.py:563
+                   license = "MIT license"                                                                                                                             config.py:563
+                                                                                                                                                                       config.py:563
+               To use the PEP 621 format (and to remove this warning), specify that                                                                                    config.py:563
+               the LICENSE file contains the license for the Project:                                                                                                  config.py:563
+                                                                                                                                                                       config.py:563
+                   license.file = "LICENSE"                                                                                                                            config.py:563
+                                                                                                                                                                       config.py:563
+           *************************************************************************                                                                                   config.py:563
+                                                                                                                                                                          dev.py:251
+           [doomchat] Starting in dev mode...                                                                                                                             dev.py:251
+                                                                                                                                                                   subprocess.py:838
+           >>> Running Command:                                                                                                                                    subprocess.py:838
+           >>>     /Users/labtocat/miniconda3/envs/venv-311/bin/python -c 'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("doomchat",      subprocess.py:838
+           run_name="__main__", alter_sys=True)'                                                                                                                                    
+           >>> Working Directory:                                                                                                                                  subprocess.py:838
+           >>>     /Users/labtocat                                                                                                                                 subprocess.py:838
+           >>> Environment Overrides:                                                                                                                              subprocess.py:838
+           >>>     PYTHONPATH=/Users/labtocat/Code/stream-lit/src                                                                                                  subprocess.py:838
+           >>>     PYTHONUNBUFFERED=1                                                                                                                              subprocess.py:838
+           >>>     PYTHONDEVMODE=1                                                                                                                                 subprocess.py:838
+           >>>     PYTHONUTF8=1                                                                                                                                    subprocess.py:838
+           ===========================================================================                                                                                    run.py:171
+           2025-02-02 00:50:10.887 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning    subprocess.py:195
+           can be ignored when running in bare mode.                                                                                                                                
+           Traceback (most recent call last):                                                                                                                      subprocess.py:195
+             File "<string>", line 1, in <module>                                                                                                                  subprocess.py:195
+             File "<frozen runpy>", line 226, in run_module                                                                                                        subprocess.py:195
+             File "<frozen runpy>", line 98, in _run_module_code                                                                                                   subprocess.py:195
+             File "<frozen runpy>", line 88, in _run_code                                                                                                          subprocess.py:195
+             File "/Users/labtocat/Code/stream-lit/src/doomchat/__main__.py", line 124, in <module>                                                                subprocess.py:195
+               main()                                                                                                                                              subprocess.py:195
+             File "/Users/labtocat/Code/stream-lit/src/doomchat/__main__.py", line 13, in main                                                                     subprocess.py:195
+               st.runtime.get_instance()                                                                                                                           subprocess.py:195
+             File "/Users/labtocat/miniconda3/envs/venv-311/lib/python3.11/site-packages/streamlit/runtime/__init__.py", line 28, in get_instance                  subprocess.py:195
+               return Runtime.instance()                                                                                                                           subprocess.py:195
+                      ^^^^^^^^^^^^^^^^^^                                                                                                                           subprocess.py:195
+             File "/Users/labtocat/miniconda3/envs/venv-311/lib/python3.11/site-packages/streamlit/runtime/runtime.py", line 161, in instance                      subprocess.py:195
+               raise RuntimeError("Runtime hasn't been created!")                                                                                                  subprocess.py:195
+           RuntimeError: Runtime hasn't been created!                                                                                                              subprocess.py:195
+[00:50:11]                                                                                                                                                            __main__.py:42
+           Problem running app doomchat.                                                                                                                              __main__.py:43
+           Saving log... started                                                                                                                                      console.py:432
+
+Main thread traceback:
+╭─────────────────────────────────────────────────────────────────────── Traceback (most recent call last) ────────────────────────────────────────────────────────────────────────╮
+│ /Users/labtocat/miniconda3/envs/venv-311/lib/python3.11/site-packages/briefcase/__main__.py:27 in main                                                                           │
+│                                                                                                                                                                                  │
+│   24 │   │   │   Path.cwd() / "pyproject.toml",                                                                                                                                  │
+│   25 │   │   │   overrides=overrides,                                                                                                                                            │
+│   26 │   │   )                                                                                                                                                                   │
+│ ❱ 27 │   │   command(**options)                                                                                                                                                  │
+│   28 │   except HelpText as e:                                                                                                                                                   │
+│   29 │   │   console.info()                                                                                                                                                      │
+│   30 │   │   console.info(str(e))                                                                                                                                                │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────────────────── locals ─────────────────────────────────────────────────────────╮                                                      │
+│ │       command = <briefcase.commands.dev.DevCommand object at 0x10324c790>                                               │                                                      │
+│ │       console = <briefcase.console.Console object at 0x1015e3210>                                                       │                                                      │
+│ │             e = BriefcaseCommandError('Problem running app doomchat.')                                                  │                                                      │
+│ │ extra_cmdline = []                                                                                                      │                                                      │
+│ │       options = {'appname': None, 'update_requirements': False, 'run_app': True, 'test_mode': False, 'passthrough': []} │                                                      │
+│ │     overrides = {}                                                                                                      │                                                      │
+│ │        result = 200                                                                                                     │                                                      │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                      │
+│                                                                                                                                                                                  │
+│ /Users/labtocat/miniconda3/envs/venv-311/lib/python3.11/site-packages/briefcase/commands/dev.py:253 in __call__                                                                  │
+│                                                                                                                                                                                  │
+│   250 │   │   │   else:                                                                                                                                                          │
+│   251 │   │   │   │   self.console.info("Starting in dev mode...", prefix=app.app_name)                                                                                          │
+│   252 │   │   │   env = self.get_environment(app, test_mode=test_mode)                                                                                                           │
+│ ❱ 253 │   │   │   return self.run_dev_app(                                                                                                                                       │
+│   254 │   │   │   │   app,                                                                                                                                                       │
+│   255 │   │   │   │   env,                                                                                                                                                       │
+│   256 │   │   │   │   test_mode=test_mode,                                                                                                                                       │
+│                                                                                                                                                                                  │
+│ ╭─────────────────────────────────────────────────────────────────── locals ────────────────────────────────────────────────────────────────────╮                                │
+│ │                 app = <com.labtocat.doomchat.doomchat v0.1.0 AppConfig>                                                                       │                                │
+│ │             appname = None                                                                                                                    │                                │
+│ │      dist_info_path = PosixPath('/Users/labtocat/Code/stream-lit/src/doomchat.dist-info')                                                     │                                │
+│ │                 env = {'PYTHONPATH': '/Users/labtocat/Code/stream-lit/src', 'PYTHONUNBUFFERED': '1', 'PYTHONDEVMODE': '1', 'PYTHONUTF8': '1'} │                                │
+│ │             options = {}                                                                                                                      │                                │
+│ │         passthrough = []                                                                                                                      │                                │
+│ │             run_app = True                                                                                                                    │                                │
+│ │                self = <briefcase.commands.dev.DevCommand object at 0x10324c790>                                                               │                                │
+│ │           test_mode = False                                                                                                                   │                                │
+│ │ update_requirements = False                                                                                                                   │                                │
+│ ╰───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                │
+│                                                                                                                                                                                  │
+│ /Users/labtocat/miniconda3/envs/venv-311/lib/python3.11/site-packages/briefcase/commands/dev.py:170 in run_dev_app                                                               │
+│                                                                                                                                                                                  │
+│   167 │   │   │   )                                                                                                                                                              │
+│   168 │   │   │                                                                                                                                                                  │
+│   169 │   │   │   # Start streaming logs for the app.                                                                                                                            │
+│ ❱ 170 │   │   │   self._stream_app_logs(                                                                                                                                         │
+│   171 │   │   │   │   app,                                                                                                                                                       │
+│   172 │   │   │   │   popen=app_popen,                                                                                                                                           │
+│   173 │   │   │   │   test_mode=test_mode,                                                                                                                                       │
+│                                                                                                                                                                                  │
+│ ╭────────────────────────────────────────────────────────────────────────────── locals ──────────────────────────────────────────────────────────────────────────────╮           │
+│ │         app = <com.labtocat.doomchat.doomchat v0.1.0 AppConfig>                                                                                                    │           │
+│ │   app_popen = <Popen: returncode: 1 args: ['/Users/labtocat/miniconda3/envs/venv-311/bin/p...>                                                                     │           │
+│ │     cmdline = ['/Users/labtocat/miniconda3/envs/venv-311/bin/python', '-c', 'import runpy, sys;sys.path.pop(0);sys.argv.extend([]);runpy.run_module("doomchat'+39] │           │
+│ │         env = {'PYTHONPATH': '/Users/labtocat/Code/stream-lit/src', 'PYTHONUNBUFFERED': '1', 'PYTHONDEVMODE': '1', 'PYTHONUTF8': '1'}                              │           │
+│ │ main_module = 'doomchat'                                                                                                                                           │           │
+│ │     options = {}                                                                                                                                                   │           │
+│ │ passthrough = []                                                                                                                                                   │           │
+│ │        self = <briefcase.commands.dev.DevCommand object at 0x10324c790>                                                                                            │           │
+│ │   test_mode = False                                                                                                                                                │           │
+│ ╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯           │
+│                                                                                                                                                                                  │
+│ /Users/labtocat/miniconda3/envs/venv-311/lib/python3.11/site-packages/briefcase/commands/run.py:202 in _stream_app_logs                                                          │
+│                                                                                                                                                                                  │
+│   199 │   │   │   │   # If we're monitoring an actual app (not just a log stream),                                                                                               │
+│   200 │   │   │   │   # and the app didn't exit cleanly, surface the error to the user.                                                                                          │
+│   201 │   │   │   │   if popen.poll() != 0:                                                                                                                                      │
+│ ❱ 202 │   │   │   │   │   raise BriefcaseCommandError(f"Problem running app {app.app_name}.")                                                                                    │
+│   203 │   │                                                                                                                                                                      │
+│   204 │   │   except KeyboardInterrupt:                                                                                                                                          │
+│   205 │   │   │   pass  # Catch CTRL-C to exit normally                                                                                                                          │
+│                                                                                                                                                                                  │
+│ ╭──────────────────────────────────────────── locals ─────────────────────────────────────────────╮                                                                              │
+│ │          app = <com.labtocat.doomchat.doomchat v0.1.0 AppConfig>                                │                                                                              │
+│ │ clean_filter = None                                                                             │                                                                              │
+│ │ clean_output = False                                                                            │                                                                              │
+│ │   log_filter = <briefcase.commands.run.LogFilter object at 0x103278ad0>                         │                                                                              │
+│ │   log_stream = False                                                                            │                                                                              │
+│ │        popen = <Popen: returncode: 1 args: ['/Users/labtocat/miniconda3/envs/venv-311/bin/p...> │                                                                              │
+│ │         self = <briefcase.commands.dev.DevCommand object at 0x10324c790>                        │                                                                              │
+│ │    test_mode = False                                                                            │                                                                              │
+│ ╰─────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+BriefcaseCommandError: Problem running app doomchat.

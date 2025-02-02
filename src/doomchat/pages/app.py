@@ -3,6 +3,13 @@ import ollama
 
 
 def render_bot_page():
+
+    st.set_page_config(
+        page_title="Doom Chat",
+        page_icon="🤖",
+    )
+
+    
     st.markdown("""
         <style>
             div[data-baseweb="select"] {

@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "tauri": "tauri",
+        "streamlit": "streamlit run streamlit/app.py",
+        "dev": "concurrently \"npm run streamlit\" \"tauri dev\"",
+        "build": "tauri build -- --config sign=false"
+    },
+    "devDependencies": {
+        "@tauri-apps/cli": "^2.2.7",
+        "concurrently": "^9.1.2"
+    }
+}

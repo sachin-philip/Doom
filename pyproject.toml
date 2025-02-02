@@ -1,0 +1,19 @@
+[tool.briefcase]
+project_name = "Doom Chat"
+bundle = "com.labtocat.doomchat"
+version = "0.1.0"
+url = "https://labtocat.com/doomchat"
+license = "MIT license"
+author = "Labtocat"
+author_email = "hello@labtocat.com"
+
+[tool.briefcase.app.doomchat]
+formal_name = "Doom Chat"
+description = "Doom Chat"
+sources = ['src/doomchat']
+requires = [
+    'streamlit>=1.20.0',
+    'ollama',
+    'webview'
+]
+entry_point = "doomchat.__main__:main"

@@ -1,0 +1,11 @@
+[server]
+enableCORS = true
+enableXsrfProtection = true
+
+[browser]
+serverAddress = "localhost"
+gatherUsageStats = false
+
+[runner]
+# This might help with the ScriptRunContext warning
+magicEnabled = false

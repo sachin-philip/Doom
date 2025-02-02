@@ -1,3 +1,58 @@
 node_modules
 .env
 .DS_Store
+
+# Tauri/Rust
+**/target/
+**/*.rs.bk
+src-tauri/icons/*.png
+src-tauri/icons/icon.icns
+src-tauri/icons/icon.ico
+.tauri/
+src-tauri/.rpt2_cache/
+src-tauri/target/**/*.deb
+src-tauri/target/**/*.rpm
+src-tauri/target/**/*.AppImage
+src-tauri/target/**/*.dmg
+src-tauri/target/**/*.exe
+src-tauri/target/**/*.msi
+
+# Frontend
+dist/
+build/
+out/
+node_modules/
+.cache/
+.temp/
+
+# Environment
+.env
+.env.local
+.env.*.local
+src-tauri/tauri.local.*
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Mobile
+android/
+ios/

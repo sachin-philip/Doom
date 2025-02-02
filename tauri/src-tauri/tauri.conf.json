@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Doom Chat",
+  "version": "0.2.0",
+  "identifier": "com.sachin.doomChat",
+  "app": {
+    "withGlobalTauri": true,
+    "windows": [
+      {
+        "title": "Doom Chat | Chat with AI",
+        "width": 1200,
+        "height": 800
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "app",
+      "dmg"
+    ],
+    "resources": [
+      "streamlit_app/**/*"
+    ],
+    "macOS": {
+      "frameworks": [],
+      "minimumSystemVersion": "11.0",
+      "signingIdentity": null,
+      "exceptionDomain": "",
+      "entitlements": null,
+      "providerShortName": "Sachin"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  },
+  "build": {
+    "beforeBuildCommand": "pip install -r requirements.txt",
+    "beforeDevCommand": "",
+    "devUrl": "http://localhost:8501"
+  }
+}

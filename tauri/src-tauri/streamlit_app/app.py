@@ -1,8 +1,16 @@
 import streamlit as st
 import ollama
 
-
-def render_bot_page():
+def main():
+    st.set_page_config(
+        page_title="Doom Chat",
+        page_icon="🤖",
+        initial_sidebar_state="expanded",
+    )
+    
+    # Add this to handle the ScriptRunContext
+    if not st.runtime.exists():
+        st.runtime.get_instance()
     st.markdown("""
         <style>
             div[data-baseweb="select"] {
@@ -110,3 +118,7 @@ def render_bot_page():
 
 
 
+
+
+if __name__ == "__main__":
+    main()
