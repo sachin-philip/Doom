@@ -5,7 +5,7 @@ Works on MacOS that has M1/M2/M3/m4 chips().
 
 ## Prerequisites
 
-- Python 3.x
+- Python 3.10
 - Ollama installed and running on your system [download here](https://ollama.com/download)
 
 ## Installation
@@ -31,3 +31,4 @@ Works on MacOS that has M1/M2/M3/m4 chips().
 ## screenshots
 
 ![Chat interface](assets/Doom.png)
+
